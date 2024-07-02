@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const projects = [
   {
     title: 'Project One',
@@ -45,16 +46,18 @@ const projects = [
   },
 ];
 
-const Projects = () => (
+function Projects() {
+  return (
   <section className="text-white font-sans min-h-screen flex items-center justify-center">
     {/* Content */}
     <div className="max-w-7xl mx-auto bg-transparent p-6">
       <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" >
         {projects.map((project, index) => (
           <div
             key={index}
             className="relative shadow text-white rounded-lg overflow-hidden group"
+            data-aos="fade-up"
           >
             <img
               src={project.imageUrl}
@@ -90,6 +93,6 @@ const Projects = () => (
       </div>
     </div>
   </section>
-);
+)};
 
 export default Projects;

@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 // Example icons - using FontAwesome CDN
 const skills = [
   { name: 'JavaScript', icon: 'fab fa-js-square', color: '#f0db4f' },
@@ -19,7 +21,8 @@ const skills = [
   { name: 'Kubernetes', icon: 'fab fa-js-square', color: '#326ce5' }
 ];
 
-const Skills = () => {
+function  Skills() {
+
   const rows = [
     skills.slice(0, 6),
     skills.slice(6, 11),
@@ -31,9 +34,9 @@ const Skills = () => {
       {/* Content */}
       <div className="w-full max-w-5xl bg-gray-800 rounded-lg p-6 shadow-lg mx-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Skills</h2>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center" data-aos="fade'top-right">
           {rows.map((row, rowIndex) => (
-            <div key={rowIndex} className="flex justify-center mb-4 space-x-4">
+            <div key={rowIndex} className="flex justify-center mb-4 space-x-4" data-aos="fade-up-right">
               {row.map((skill, index) => (
                 <div key={index} className="flex items-center bg-gray-700 rounded-full px-4 py-2">
                   <i className={`${skill.icon} mr-4`} style={{ color: skill.color }}></i>
