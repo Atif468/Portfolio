@@ -29,6 +29,7 @@ function App(){
     <Profiles />
     <Education />
     <ContactForm />
+    <p className="text-gray-400 text-center p-6"><h1>© 2024 Your Name. All rights reserved.</h1></p>
   </div>
 )};
 

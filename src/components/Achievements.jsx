@@ -4,30 +4,24 @@ const achievements = [
   {
     title: 'Hackathon Winner',
     description: 'First place in the regional hackathon competition.',
-    imageUrl: 'https://via.placeholder.com/100', // Replace with actual image URL
+    imageUrl: '#', // Replace with actual image URL
   },
   {
     title: 'Certifications',
     description: 'Certified in Web Development and Cloud Computing.',
-    imageUrl: 'https://via.placeholder.com/100', // Replace with actual image URL
-  },
-  {
-    title: 'Published Research',
-    description: 'Published research paper on AI and Machine Learning.',
-    imageUrl: 'https://via.placeholder.com/100', // Replace with actual image URL
+    imageUrl: '#', // Replace with actual image URL
   },
 ];
 
 const Achievements = () => (
-  <section className="relative bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
-    <div className="max-w-7xl mx-auto p-6">
+  <section className="relative bg-gray-900 text-white font-sans overflow-hidden min-h-screen flex items-center justify-center">
+    <div className="max-w-7xl mx-auto p-6 overflow-hidden flex flex-col items-center">
       <h2 className="text-4xl font-bold mb-8 text-center">Achievements</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-right">
+      <div className="flex flex-row gap-8 w-full justify-items-center" data-aos="fade-right">
         {achievements.map((achievement, index) => (
           <div
             key={index}
             className="relative shadow-lg text-white rounded-lg overflow-hidden group bg-gray-800 p-6 transition-transform transform hover:scale-105"
-            
           >
             <img
               src={achievement.imageUrl}
