@@ -9,6 +9,8 @@ import Achievements from "./components/Achievements";
 import Education from "./components/Education";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App = () => {
   //take ref of all the compo...
@@ -64,7 +66,7 @@ const App = () => {
         <ContactForm />
       </section>
       <p className="text-gray-400 text-center p-6">
-        <h1>© 2024 Atif. All rights reserved.</h1>
+        © 2024 Atif. All rights reserved.
       </p>
       <SpeedInsights />
       <Analytics />
