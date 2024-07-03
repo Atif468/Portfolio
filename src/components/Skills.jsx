@@ -1,6 +1,5 @@
 import React from "react";
 
-// Example icons - using FontAwesome CDN
 const skills = [
   { name: "JavaScript", icon: "fab fa-js-square", color: "#f0db4f" },
   { name: "React", icon: "fab fa-react", color: "#61dbfb" },
@@ -26,27 +25,26 @@ function Skills() {
   const rows = [skills.slice(0, 9), skills.slice(9, 14), skills.slice(14, 18)];
 
   return (
-    <section className="bg-gray-900 text-white  font-sans min-h-screen flex items-center justify-center">
-      {/* Content */}
+    <section className="bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
       <div className="w-full max-w-7xl bg-gray-800 overflow-hidden rounded-lg p-6 shadow-lg mx-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Skills</h2>
-        <div className="flex flex-col items-center" data-aos="fade'top-right">
+        <div className="flex flex-col items-center" data-aos="fade-top-right">
           {rows.map((row, rowIndex) => (
             <div
               key={rowIndex}
-              className="flex justify-center mb-4 space-x-4"
+              className="flex flex-wrap justify-center mb-4 space-x-4"
               data-aos="fade-up-right"
             >
               {row.map((skill, index) => (
                 <div
                   key={index}
-                  className="flex items-center bg-gray-700 rounded-full px-4 py-2"
+                  className="flex items-center bg-gray-700 rounded-full px-4 py-2 mb-4 md:mb-0"
                 >
                   <i
-                    className={`${skill.icon} mr-4`}
+                    className={`${skill.icon} mr-2 md:mr-4 text-lg md:text-xl`}
                     style={{ color: skill.color }}
                   ></i>
-                  <span className="text-lg">{skill.name}</span>
+                  <span className="text-sm md:text-lg">{skill.name}</span>
                 </div>
               ))}
             </div>

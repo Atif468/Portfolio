@@ -73,16 +73,18 @@ const Profiles = () => {
 
   return (
     <section className="bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
-      <div className="max-w-6xl  p-8 overflow-hidden">
-        <h2 className="text-4xl font-bold mb-8 text-center">Profiles</h2>
+      <div className="max-w-6xl p-4 md:p-8 overflow-hidden">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center">
+          Profiles
+        </h2>
 
-        <div className="flex flex-row gap-8 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* GitHub Section */}
           <div
-            className="bg-gray-800 rounded-lg p-8 shadow-lg text-center w-96"
+            className="bg-gray-800 rounded-lg p-4 md:p-8 shadow-lg text-center"
             data-aos="fade-down-right"
           >
-            <h3 className="text-3xl text-blue-400 mb-4">GitHub</h3>
+            <h3 className="text-2xl md:text-3xl text-blue-400 mb-4">GitHub</h3>
             {loading ? (
               <p className="text-gray-400">Loading GitHub data...</p>
             ) : error ? (
@@ -95,16 +97,16 @@ const Profiles = () => {
                 >
                   Visit GitHub Profile
                 </a>
-                <p className="text-gray-300 text-lg mt-4">
+                <p className="text-gray-300 text-sm md:text-lg mt-4">
                   Username: {githubData.login}
                 </p>
-                <p className="text-gray-300 text-lg">
+                <p className="text-gray-300 text-sm md:text-lg">
                   Public Repos: {githubData.public_repos}
                 </p>
-                <p className="text-gray-300 text-lg">
+                <p className="text-gray-300 text-sm md:text-lg">
                   Followers: {githubData.followers}
                 </p>
-                <p className="text-gray-300 text-lg">
+                <p className="text-gray-300 text-sm md:text-lg">
                   Following: {githubData.following}
                 </p>
               </div>
@@ -113,10 +115,12 @@ const Profiles = () => {
 
           {/* LeetCode Section */}
           <div
-            className="bg-gray-800 rounded-lg p-8 shadow-lg text-center w-96"
+            className="bg-gray-800 rounded-lg p-4 md:p-8 shadow-lg text-center"
             data-aos="fade-down"
           >
-            <h3 className="text-3xl text-green-400 mb-4">LeetCode</h3>
+            <h3 className="text-2xl md:text-3xl text-green-400 mb-4">
+              LeetCode
+            </h3>
             {loading ? (
               <p className="text-gray-400">Loading LeetCode data...</p>
             ) : error ? (
@@ -129,20 +133,20 @@ const Profiles = () => {
                 >
                   Visit LeetCode Profile
                 </a>
-                <p className="text-gray-300 text-lg mt-4">
+                <p className="text-gray-300 text-sm md:text-lg mt-4">
                   Total Solved: {leetcodeData.totalSolved}
                 </p>
-                <p className="text-gray-300 text-lg">
+                <p className="text-gray-300 text-sm md:text-lg">
                   World Rank: {leetcodeData.ranking}
                 </p>
-                <p className="text-gray-300 text-lg">
-                  Easy solved: {leetcodeData.easySolved}
+                <p className="text-gray-300 text-sm md:text-lg">
+                  Easy Solved: {leetcodeData.easySolved}
                 </p>
-                <p className="text-gray-300 text-lg">
-                  Medium solved: {leetcodeData.mediumSolved}
+                <p className="text-gray-300 text-sm md:text-lg">
+                  Medium Solved: {leetcodeData.mediumSolved}
                 </p>
-                <p className="text-gray-300 text-lg">
-                  Hard solved: {leetcodeData.hardSolved}
+                <p className="text-gray-300 text-sm md:text-lg">
+                  Hard Solved: {leetcodeData.hardSolved}
                 </p>
               </div>
             ) : null}
@@ -150,10 +154,12 @@ const Profiles = () => {
 
           {/* GFG Section */}
           <div
-            className="bg-gray-800 rounded-lg p-8 shadow-lg text-center w-96"
+            className="bg-gray-800 rounded-lg p-4 md:p-8 shadow-lg text-center"
             data-aos="fade-down-left"
           >
-            <h3 className="text-3xl text-yellow-400 mb-4">GeeksforGeeks</h3>
+            <h3 className="text-2xl md:text-3xl text-yellow-400 mb-4">
+              GeeksforGeeks
+            </h3>
             {loading ? (
               <p className="text-gray-400">Loading GeeksforGeeks data...</p>
             ) : error ? (
@@ -166,16 +172,16 @@ const Profiles = () => {
                 >
                   Visit GFG Profile
                 </a>
-                <p className="text-gray-300 text-lg mt-4">
-                  Total problems: {gfgData.TotalProblemSolved}
+                <p className="text-gray-300 text-sm md:text-lg mt-4">
+                  Total Problems: {gfgData.TotalProblemSolved}
                 </p>
-                <p className="text-gray-300 text-lg">
+                <p className="text-gray-300 text-sm md:text-lg">
                   Easy Solved: {gfgData.Hard}
                 </p>
-                <p className="text-gray-300 text-lg">
+                <p className="text-gray-300 text-sm md:text-lg">
                   Medium Solved: {gfgData.Basic}
                 </p>
-                <p className="text-gray-300 text-lg">
+                <p className="text-gray-300 text-sm md:text-lg">
                   Hard Solved: {gfgData.School}
                 </p>
               </div>

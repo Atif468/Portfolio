@@ -2,49 +2,43 @@ import React from "react";
 
 const projects = [
   {
-    title: "Project One",
-    description: "A web application to manage tasks and deadlines effectively.",
-    imageUrl: "#",
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    title: "Project Two",
+    title: "Qiuz Luxe",
     description:
-      "A social media platform to connect with friends and share updates.",
-    imageUrl: "#",
-    liveLink: "#",
-    githubLink: "#",
+      "Pick a topic, answer questions, and conquer your knowledge with our quiz app!",
+    imageUrl: "https://bit.ly/45XDfn6",
+    liveLink: "https://quiz-luxe.vercel.app/",
+    githubLink: "https://github.com/Atif468/Quiz-Luxe",
   },
   {
-    title: "Project Three",
-    description: "A portfolio website showcasing my projects and skills.",
-    imageUrl: "",
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    title: "Project Four",
+    title: "Full Stack Auth",
     description:
-      "A task management tool to organize and prioritize your tasks.",
-    imageUrl: "#",
-    liveLink: "#",
-    githubLink: "#",
+      "Authentication secures user access by building login, registration, and authorization across both frontend and backend.",
+    imageUrl: "https://bit.ly/3RSpnEM",
+    liveLink: "",
+    githubLink: "https://github.com/Atif468/Full-Stack-Auth",
   },
   {
-    title: "Project Five",
+    title: "Connect with Backend",
+    description:
+      "This highlights the efficient flow of data between frontend and backend.",
+    imageUrl: "https://bit.ly/3RQVTHa",
+    liveLink: "",
+    githubLink: "https://github.com/Atif468/connect-with-backend",
+  },
+  {
+    title: "Amazon UI Clone",
+    description:
+      "Explore a static replica of Amazon's interface built with HTML and Tailwind.",
+    imageUrl: "https://bit.ly/45Punj7",
+    liveLink: "https://atif468.github.io/Amazon/src/index.html",
+    githubLink: "https://github.com/Atif468/Amazon",
+  },
+  {
+    title: "Portfolio",
     description: "An e-commerce site with secure payment integration.",
-    imageUrl: "#",
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    title: "Project Six",
-    description:
-      "A blog platform with user authentication and content management.",
-    imageUrl: "#",
-    liveLink: "#",
-    githubLink: "#",
+    imageUrl: "https://bit.ly/3zsijbL",
+    liveLink: "https://atifansari.vercel.app/",
+    githubLink: "https://github.com/Atif468/Portfolio",
   },
 ];
 
@@ -64,7 +58,7 @@ function Projects() {
               <img
                 src={project.imageUrl}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 cover"
               />
               <div className="p-4">
                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
@@ -72,14 +66,18 @@ function Projects() {
               </div>
               <div className="absolute inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                  <a
-                    href={project.liveLink}
-                    className="text-lg text-blue-400 mr-5 hover:text-blue-300 mb-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live
-                  </a>
+                  {project.liveLink ? (
+                    <a
+                      href={project.liveLink}
+                      className="text-lg text-blue-400 mr-5 hover:text-blue-300 mb-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live
+                    </a>
+                  ) : (
+                    <a></a>
+                  )}
                   <a
                     href={project.githubLink}
                     className="text-lg text-green-400 hover:text-green-300"

@@ -1,11 +1,11 @@
 import React from 'react';
 
 const ContactForm = () => (
-  <section className="relative  bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
+  <section className="relative bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
     {/* Content */}
-    <div className="max-w-md mx-auto bg-gray-800 overflow-hidden rounded-lg p-6 shadow-lg" data-aos="flip-right">
+    <div className="w-full max-w-lg lg:max-w-3xl mx-auto bg-gray-800 overflow-hidden rounded-lg p-6 shadow-lg" data-aos="flip-right">
       <h2 className="text-3xl font-bold mb-4 text-center">Contact Form</h2>
-      <form className="space-y-4" >
+      <form className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-white text-sm font-bold mb-2">Name</label>
           <input type="text" id="name" name="name" className="bg-gray-900 rounded px-3 py-2 w-full focus:outline-none focus:ring focus:border-blue-300" />
@@ -23,7 +23,6 @@ const ContactForm = () => (
         </div>
       </form>
     </div>
-    
   </section>
 );
 
