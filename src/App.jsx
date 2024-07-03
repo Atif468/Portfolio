@@ -66,6 +66,8 @@ const App = () => {
       <p className="text-gray-400 text-center p-6">
         <h1>© 2024 Atif. All rights reserved.</h1>
       </p>
+      <SpeedInsights />
+      <Analytics />
     </div>
   );
 };
