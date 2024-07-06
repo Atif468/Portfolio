@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { motion, useScroll } from "framer-motion";
 import NavBar from "./components/NavBar";
 import Introduction from "./components/Introduction";
 import Skills from "./components/Skills";
@@ -21,6 +22,7 @@ const App = () => {
   const achievementsRef = useRef(null);
   const educationRef = useRef(null);
   const profilesRef = useRef(null);
+  const { scrollYProgress } = useScroll();
 
   const scrollToSection = (e) => {
     e.current.scrollIntoView({ behavior: "smooth" });
@@ -32,8 +34,21 @@ const App = () => {
     });
   }, []);
 
+
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // height: 10px;
+  // background: var(--red);
+  // transform-origin: 0%;
+
   return (
     <div className="font-sans">
+       <motion.div
+        className="fixed top-0 left-0 right-0 h-2 z-10 bg-white origin-left"
+        style={{ scaleX: scrollYProgress }}
+      />
       <NavBar
         scrollToSection={scrollToSection}
         introRef={introRef}

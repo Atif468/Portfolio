@@ -5,7 +5,7 @@ const projects = [
     title: "Qiuz Luxe",
     description:
       "Pick a topic, answer questions, and conquer your knowledge with our quiz app!",
-    imageUrl: "https://bit.ly/45XDfn6",
+    imageUrl: "../../assets/Quiz.png",
     liveLink: "https://quiz-luxe.vercel.app/",
     githubLink: "https://github.com/Atif468/Quiz-Luxe",
   },
@@ -13,7 +13,7 @@ const projects = [
     title: "Full Stack Auth",
     description:
       "Authentication secures user access by building login, registration, and authorization across both frontend and backend.",
-    imageUrl: "https://bit.ly/3RSpnEM",
+    imageUrl: "../../assets/auth.png",
     liveLink: "",
     githubLink: "https://github.com/Atif468/Full-Stack-Auth",
   },
@@ -21,7 +21,7 @@ const projects = [
     title: "Connect with Backend",
     description:
       "This highlights the efficient flow of data between frontend and backend.",
-    imageUrl: "https://bit.ly/3RQVTHa",
+    imageUrl: "../../assets/connect.png",
     liveLink: "",
     githubLink: "https://github.com/Atif468/connect-with-backend",
   },
@@ -29,14 +29,14 @@ const projects = [
     title: "Amazon UI Clone",
     description:
       "Explore a static replica of Amazon's interface built with HTML and Tailwind.",
-    imageUrl: "https://bit.ly/45Punj7",
+    imageUrl: "../../assets/clone.jpeg",
     liveLink: "https://atif468.github.io/Amazon/src/index.html",
     githubLink: "https://github.com/Atif468/Amazon",
   },
   {
     title: "Portfolio",
-    description: "An e-commerce site with secure payment integration.",
-    imageUrl: "https://bit.ly/3zsijbL",
+    description: "Created a responsive and visually appealing personal portfolio website. This project showcases my skills, projects, and achievements.",
+    imageUrl: "../../assets/portfolio.jpeg",
     liveLink: "https://atifansari.vercel.app/",
     githubLink: "https://github.com/Atif468/Portfolio",
   },
