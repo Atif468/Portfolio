@@ -36,7 +36,7 @@ const projects = [
   {
     title: "Portfolio",
     description: "Created a responsive and visually appealing personal portfolio website. This project showcases my skills, projects, and achievements.",
-    imageUrl: "https://github.com/Atif468/Portfolio/blob/main/assets/portfolio?raw=true",
+    imageUrl: "https://github.com/Atif468/Portfolio/blob/main/assets/portfolio.jpeg?raw=true",
     liveLink: "https://atifansari.vercel.app/",
     githubLink: "https://github.com/Atif468/Portfolio",
   },
