@@ -42,7 +42,7 @@ function Introduction() {
         </p>
         <a
           className="text-center inline-block py-2 h-12 w-32 border border-white rounded-full"
-          href="https://github.com/Atif468/Portfolio/blob/bd307b670f461743542ecf5507146157dacf25f8/assets/RESUME.pdf"
+          href="https://github.com/Atif468/Portfolio/blob/main/assets/RESUME.pdf"
           download="RESUME.pdf"
           >
           Resume
