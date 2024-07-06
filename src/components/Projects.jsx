@@ -13,7 +13,7 @@ const projects = [
     title: "Full Stack Auth",
     description:
       "Authentication secures user access by building login, registration, and authorization across both frontend and backend.",
-    imageUrl: "../../assets/auth.png",
+    imageUrl: "https://github.com/Atif468/Portfolio/blob/main/assets/auth.png?raw=true",
     liveLink: "",
     githubLink: "https://github.com/Atif468/Full-Stack-Auth",
   },
