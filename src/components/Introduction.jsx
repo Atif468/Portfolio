@@ -42,7 +42,7 @@ function Introduction() {
         </p>
         <a
           className="text-center inline-block py-2 h-12 w-32 border border-white rounded-full"
-          href="/assets/RESUME.pdf"
+          href="../assets/RESUME.pdf"
           download="RESUME.pdf"
           >
           Resume
