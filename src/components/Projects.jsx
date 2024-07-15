@@ -2,7 +2,7 @@ import React from "react";
 
 const projects = [
   {
-    title: "Qiuz Luxe",
+    title: "Quiz Luxe",
     description:
       "Pick a topic, answer questions, and conquer your knowledge with our quiz app!",
     imageUrl: "https://raw.githubusercontent.com/Atif468/Portfolio/main/assets/Quiz.png",
