@@ -12,7 +12,7 @@ const Profiles = () => {
     const fetchLeetcodeData = async () => {
       try {
         const response = await fetch(
-          "https://leetcode-stats-api.herokuapp.com/Atif_32395"
+          "https://leetcode-stats-api.herokuapp.com/Atif_2005"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch data");
