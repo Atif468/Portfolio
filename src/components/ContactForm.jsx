@@ -12,7 +12,7 @@ function ContactForm() {
   };
 
   return (
-    <section className="relative bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
+    <section className="relative  text-white font-sans min-h-screen flex items-center justify-center">
       <div
         className="w-full max-w-lg lg:max-w-3xl mx-auto bg-gray-800 overflow-hidden rounded-lg p-6 shadow-lg"
         data-aos="flip-right"

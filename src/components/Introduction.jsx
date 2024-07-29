@@ -9,7 +9,7 @@ function Introduction() {
   const splitter = new GraphemeSplitter();
   return (
     <section
-      className="relative bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center"
+      className="relative text-white font-sans min-h-screen flex items-center justify-center"
       data-aos="fade-down-right"
     >
       {

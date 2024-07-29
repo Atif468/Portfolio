@@ -42,6 +42,7 @@ const projects = [
   },
 ];
 
+
 function Projects() {
   return (
     <section className="text-white font-sans min-h-screen flex items-center justify-center">
