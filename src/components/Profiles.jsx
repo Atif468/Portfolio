@@ -81,7 +81,7 @@ const Profiles = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* GitHub Section */}
           <div
-            className="bg-gray-800 rounded-lg p-4 md:p-8 shadow-lg text-center"
+            className="rounded-lg p-4 md:p-8 shadow-lg text-center backdrop-blur-3xl border-2 border-orange-400"
             data-aos="fade-down-right"
           >
             <h3 className="text-2xl md:text-3xl text-blue-400 mb-4">GitHub</h3>
@@ -115,7 +115,7 @@ const Profiles = () => {
 
           {/* LeetCode Section */}
           <div
-            className="bg-gray-800 rounded-lg p-4 md:p-8 shadow-lg text-center"
+            className="rounded-lg p-4 md:p-8 shadow-lg text-center backdrop-blur-3xl border-2 border-orange-400"
             data-aos="fade-down"
           >
             <h3 className="text-2xl md:text-3xl text-green-400 mb-4">
@@ -154,7 +154,7 @@ const Profiles = () => {
 
           {/* GFG Section */}
           <div
-            className="bg-gray-800 rounded-lg p-4 md:p-8 shadow-lg text-center"
+            className="rounded-lg p-4 md:p-8 shadow-lg text-center backdrop-blur-3xl border-2 border-orange-400"
             data-aos="fade-down-left"
           >
             <h3 className="text-2xl md:text-3xl text-yellow-400 mb-4">

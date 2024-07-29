@@ -31,6 +31,7 @@
     "react-type-animation": "^3.2.0",
     "solid-icons": "^1.1.0",
     "speed-insights": "github:vercel/speed-insights",
+    "tailwindcss-filters": "^3.0.0",
     "tsparticles": "^3.5.0"
   },
   "devDependencies": {

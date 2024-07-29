@@ -3,12 +3,12 @@ import React from "react";
 const achievements = [
   {
     title: "Hackathon Winner",
-    description: "Second place in the regional hackathon competition.",
+    description: "First place in the regional hackathon competition.",
     imageUrl: "#", // Replace with actual image URL
   },
   {
     title: "Certifications",
-    description: "Certified in Web Development and Java.",
+    description: "Certified in Web Development and Cloud Computing.",
     imageUrl: "#", // Replace with actual image URL
   },
 ];
