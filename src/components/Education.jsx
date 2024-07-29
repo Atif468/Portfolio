@@ -16,7 +16,7 @@ const educationData = [
     title: '12th Grade',
     board: 'UP Board',
     year: '2022',
-    percentage: '65.6%',
+    percentage: '69.6%',
     description: 'Completed Intermediate school education with PCM.',
   },
   {
