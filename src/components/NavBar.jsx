@@ -52,7 +52,9 @@ const NavBar = ({
           { label: "Education", ref: educationRef, href: "#education" },
           { label: "Contact", ref: contactRef, href: "#contact" },
         ].map((item, index) => (
-          <li key={index}>
+          <li key={index}
+            className="pl-8"
+            >
             <a
               href={item.href}
               className="relative text-gray-200 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
