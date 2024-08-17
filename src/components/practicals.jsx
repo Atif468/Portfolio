@@ -1,4 +1,3 @@
-
 import { useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
@@ -15,6 +14,7 @@ export default function Particle() {
   }, []);
 
   const particlesLoaded = (container) => {
+    console.log(container);
   };
 
   return (
@@ -24,68 +24,75 @@ export default function Particle() {
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           style={{
-            zIndex: -1,
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: "-1",
           }}
           options={{
-            fpsLimit: 120,
+            fpsLimit: 60,
             interactivity: {
               events: {
                 onClick: {
                   enable: true,
-                  mode: "push",
+                  mode: "repulse",
                 },
                 onHover: {
                   enable: true,
-                  mode: "push",
+                  mode: "repulse",
                 },
                 resize: true,
               },
               modes: {
                 push: {
-                  quantity: 4,
+                  quantity: 80,
                 },
                 repulse: {
-                  distance: 200,
-                  duration: 0.3,
+                  distance: 100,
+                  duration: 0.4,
                 },
               },
             },
             particles: {
               color: {
-                value: "#FFFFFF",
+                value: "#ffffff",
               },
               links: {
-                color: "#FFFFFF",
+                color: "#ffffff",
                 distance: 150,
                 enable: true,
-                opacity: 0.00,
+                opacity: 0.1,
                 width: 1,
               },
               move: {
                 direction: "none",
                 enable: true,
                 outModes: {
-                  default: "bounce",
+                  default: "out",
                 },
-                random: false,
-                speed: 0.5,
-                straight: true,
+                random: true,
+                speed: 1,
+                straight: false,
               },
               number: {
                 density: {
                   enable: true,
-                  area: 300,
+                  area: 800,
                 },
-                value: 260,
+                value: 80,
               },
               opacity: {
                 value: 0.5,
+                random: true,
               },
               shape: {
-                type: "triangle",
+                type: "circle",
               },
               size: {
-                value: { min: 1, max: 3 },
+                value: { min: 1, max: 5 },
+                random: true,
               },
             },
             detectRetina: true,
