@@ -16,7 +16,7 @@ function Introduction() {
         console.log("hello")
       }
       <Particle />
-      <div className=" overflow-hidden">
+      <div className=" overflow-hidden  m-10">
         <h1 className="text-5xl font-bold mb-6">
           Hello, I'm
           <span style={{ fontSize: "1em", color: "white" }}>
