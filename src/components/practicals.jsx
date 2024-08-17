@@ -81,7 +81,7 @@ export default function Particle() {
                 value: 0.5,
               },
               shape: {
-                type: "triangle",
+                type: "circle",
               },
               size: {
                 value: { min: 1, max: 3 },
