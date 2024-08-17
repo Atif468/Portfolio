@@ -25,7 +25,7 @@ function Skills() {
   const rows = [skills.slice(0, 9), skills.slice(9, 14), skills.slice(14, 18)];
 
   return (
-    <section className="bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
+    <section className=" text-white font-sans min-h-screen flex items-center justify-center">
       <div className="w-full max-w-7xl bg-gray-800 overflow-hidden rounded-lg p-6 shadow-lg mx-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Skills</h2>
         <div className="flex flex-col items-center" data-aos="fade-top-right">

@@ -10,8 +10,8 @@ const NavBar = ({
   educationRef,
   profilesRef,
 }) => (
-  <nav className="backdrop-blur-sm rounded-full w-[60%] max-w-auto m-auto shadow-sm shadow-white p-3 mb-4 flex justify-center sticky top-5 z-50">
-    <ul className="flex space-x-5 overflow-hidden">
+  <nav className="backdrop-blur-sm rounded-full w-[60%] max-w-auto m-auto shadow-sm shadow-white p-3 mb-4 flex justify-center sticky top-5 z-50 scroll-m-1">
+    <ul className="flex space-x-5 overflow-hidden scroll-m-3">
       <li>
         <a
           href="#introduction"
