@@ -5,7 +5,7 @@ const projects = [
     title: "Qiuz Luxe",
     description:
       "Pick a topic, answer questions, and conquer your knowledge with our quiz app!",
-    imageUrl: "https://raw.githubusercontent.com/Atif468/Portfolio/main/assets/Quiz.png",
+    imageUrl: "../../assets/Quiz.png",
     liveLink: "https://quiz-luxe.vercel.app/",
     githubLink: "https://github.com/Atif468/Quiz-Luxe",
   },
@@ -13,7 +13,7 @@ const projects = [
     title: "Full Stack Auth",
     description:
       "Authentication secures user access by building login, registration, and authorization across both frontend and backend.",
-    imageUrl: "https://raw.githubusercontent.com/Atif468/Portfolio/main/assets/auth.png",
+    imageUrl: "../../assets/auth.png",
     liveLink: "",
     githubLink: "https://github.com/Atif468/Full-Stack-Auth",
   },
@@ -21,7 +21,7 @@ const projects = [
     title: "Connect with Backend",
     description:
       "This highlights the efficient flow of data between frontend and backend.",
-    imageUrl: "https://raw.githubusercontent.com/Atif468/Portfolio/main/assets/connect.png",
+    imageUrl: "../../assets/connect.png",
     liveLink: "",
     githubLink: "https://github.com/Atif468/connect-with-backend",
   },
@@ -29,19 +29,18 @@ const projects = [
     title: "Amazon UI Clone",
     description:
       "Explore a static replica of Amazon's interface built with HTML and Tailwind.",
-    imageUrl: "https://raw.githubusercontent.com/Atif468/Portfolio/main/assets/clone.jpeg",
+    imageUrl: "../../assets/clone.jpeg",
     liveLink: "https://atif468.github.io/Amazon/src/index.html",
     githubLink: "https://github.com/Atif468/Amazon",
   },
   {
     title: "Portfolio",
     description: "Created a responsive and visually appealing personal portfolio website. This project showcases my skills, projects, and achievements.",
-    imageUrl: "https://raw.githubusercontent.com/Atif468/Portfolio/main/assets/portfolio.jpeg",
+    imageUrl: "../../assets/portfolio.jpeg",
     liveLink: "https://atifansari.vercel.app/",
     githubLink: "https://github.com/Atif468/Portfolio",
   },
 ];
-
 
 function Projects() {
   return (
@@ -61,7 +60,7 @@ function Projects() {
                 alt={project.title}
                 className="w-full h-48 cover"
               />
-              <div className="p-4 bg-white text-black h-40">
+              <div className="p-4">
                 <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                 <p className="mb-4">{project.description}</p>
               </div>

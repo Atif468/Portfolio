@@ -2,20 +2,21 @@ import React, { useState } from "react";
 import Particle from "./practicals";
 import GraphemeSplitter from "grapheme-splitter";
 import { TypeAnimation } from "react-type-animation";
+// import { FaLinkedinIn } from "react-icons/fa6";
 
 
 function Introduction() {
   const splitter = new GraphemeSplitter();
   return (
     <section
-      className="text-white font-sans min-h-screen flex justify-center items-center"
+      className="relative bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center"
       data-aos="fade-down-right"
     >
       {
         console.log("hello")
       }
       <Particle />
-      <div className="z-10 m-10">
+      <div className=" overflow-hidden">
         <h1 className="text-5xl font-bold mb-6">
           Hello, I'm
           <span style={{ fontSize: "1em", color: "white" }}>
@@ -53,5 +54,3 @@ function Introduction() {
 }
 
 export default Introduction;
-
-
