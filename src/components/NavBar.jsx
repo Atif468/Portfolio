@@ -17,11 +17,11 @@ const NavBar = ({
   };
 
   return (
-    <nav className="backdrop-blur-md rounded-lg w-[90%] max-w-screen-lg mx-auto shadow-2xl shadow-black p-4 mb-6 flex justify-between items-center sticky top-4 z-50">
+    <nav className="backdrop-blur-md rounded-lg w-[90%] max-w-screen mx-auto shadow-2xl shadow-black p-4 mb-6 flex justify-between items-center sticky top-4 z-50">
       <div className="text-white text-xl font-bold font-mono">Atif</div>
       <button
         onClick={toggleMenu}
-        className="md:hidden text-white focus:outline-none"
+        className="md:hidden text-white"
       >
         <svg
           className="w-8 h-8"
@@ -39,7 +39,7 @@ const NavBar = ({
         </svg>
       </button>
       <ul
-        className={`flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 absolute md:relative bg-gray-800 md:bg-transparent w-full md:w-auto top-16 md:top-0 left-0 md:left-auto transition-all duration-300 ${
+        className={`flex flex-col md:flex-row space-x-4 absolute md:relative bg-white text-black md:text-white rounded-2xl md:bg-transparent w-60 md:w-min  top-16 md:top-0 right-0 md:left-auto transition-all duration-300 ${
           isOpen ? "block" : "hidden md:flex"
         }`}
       >
@@ -53,11 +53,10 @@ const NavBar = ({
           { label: "Contact", ref: contactRef, href: "#contact" },
         ].map((item, index) => (
           <li key={index}
-            className="pl-8"
-            >
+          className="p-2">
             <a
               href={item.href}
-              className="relative text-gray-200 transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+              className="relative transition-all duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
               onClick={() => scrollToSection(item.ref)}
             >
               {item.label}
