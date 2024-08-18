@@ -72,7 +72,7 @@ const Profiles = () => {
   }, []);
 
   return (
-    <section className="bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
+    <section className="text-white font-sans min-h-screen flex items-center justify-center">
       <div className="max-w-6xl p-4 md:p-8 overflow-hidden">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center">
           Profiles
@@ -81,7 +81,7 @@ const Profiles = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* GitHub Section */}
           <div
-            className="bg-gray-800 rounded-lg p-4 md:p-8 shadow-lg text-center"
+            className="shadow-sm shadow-white rounded-lg p-4 md:p-8 text-center backdrop-blur-3xl "
             data-aos="fade-down-right"
           >
             <h3 className="text-2xl md:text-3xl text-blue-400 mb-4">GitHub</h3>
@@ -115,7 +115,7 @@ const Profiles = () => {
 
           {/* LeetCode Section */}
           <div
-            className="bg-gray-800 rounded-lg p-4 md:p-8 shadow-lg text-center"
+            className="shadow-sm shadow-white rounded-lg p-4 md:p-8  text-center backdrop-blur-3xl "
             data-aos="fade-down"
           >
             <h3 className="text-2xl md:text-3xl text-green-400 mb-4">
@@ -154,7 +154,7 @@ const Profiles = () => {
 
           {/* GFG Section */}
           <div
-            className="bg-gray-800 rounded-lg p-4 md:p-8 shadow-lg text-center"
+            className="shadow-sm shadow-white rounded-lg p-4 md:p-8 text-center backdrop-blur-3xl"
             data-aos="fade-down-left"
           >
             <h3 className="text-2xl md:text-3xl text-yellow-400 mb-4">

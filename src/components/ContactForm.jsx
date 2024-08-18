@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -13,9 +12,9 @@ function ContactForm() {
   };
 
   return (
-    <section className="relative bg-gray-900 text-white font-sans min-h-screen flex items-center justify-center">
+    <section className="relative  text-white font-sans min-h-screen flex items-center justify-center">
       <div
-        className="w-full max-w-80 md:max-w-xl lg:max-w-2xl mx-auto bg-gray-800 overflow-hidden rounded-lg p-6 shadow-lg"
+        className="w-full max-w-lg lg:max-w-3xl mx-auto bg-gray-800 overflow-hidden rounded-lg p-6 shadow-lg"
         data-aos="flip-right"
       >
         <h2 className="text-3xl font-bold mb-4 text-center">Contact Form</h2>
@@ -73,7 +72,6 @@ function ContactForm() {
         </form>
       </div>
     </section>
-
   );
 }
 
