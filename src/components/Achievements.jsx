@@ -2,21 +2,21 @@ import React from "react";
 
 const achievements = [
   {
-    title: "Hackathon Winner",
-    description: "First place in the regional hackathon competition.",
-    imageUrl: "#", // Replace with actual image URL
+    title: "",
+    description: "Second place in the Collge hackathon competition.",
+    imageUrl: "#", 
   },
   {
-    title: "Certifications",
-    description: "Certified in Web Development and Cloud Computing.",
-    imageUrl: "#", // Replace with actual image URL
+    title: "",
+    description: "Certified in Web Development (Front-end).",
+    imageUrl: "#",
   },
 ];
 
 const Achievements = () => (
   <section className="relative  text-white font-sans overflow-hidden min-h-screen flex items-center justify-center">
     <div className="max-w-7xl mx-auto p-4 sm:p-6 overflow-hidden flex flex-col items-center">
-      <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center">Achievements</h2>
+      <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center hover:scale-150 duration-300">Achievements</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full" data-aos="fade-right">
         {achievements.map((achievement, index) => (
           <div

@@ -17,7 +17,7 @@ function ContactForm() {
         className="w-full max-w-lg lg:max-w-3xl mx-auto bg-gray-800 overflow-hidden rounded-lg p-6 shadow-lg"
         data-aos="flip-right"
       >
-        <h2 className="text-3xl font-bold mb-4 text-center">Contact Form</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center hover:scale-150 duration-300">Contact Form</h2>
         <form className="space-y-4">
           <div>
             <label className="block text-white text-sm font-bold mb-2">

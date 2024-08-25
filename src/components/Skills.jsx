@@ -27,7 +27,7 @@ function Skills() {
   return (
     <section className=" text-white font-sans min-h-screen flex items-center justify-center">
       <div className="w-full max-w-7xl bg-gray-800 overflow-hidden rounded-lg p-6 shadow-lg mx-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Skills</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center hover:scale-150 duration-300">Skills</h2>
         <div className="flex flex-col items-center" data-aos="fade-top-right">
           {rows.map((row, rowIndex) => (
             <div

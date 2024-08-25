@@ -48,7 +48,7 @@ function Projects() {
     <section className="text-white font-sans min-h-screen flex items-center justify-center">
       {/* Content */}
       <div className="max-w-7xl mx-auto overflow-hidden bg-transparent p-6">
-        <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center hover:scale-150 duration-300">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div

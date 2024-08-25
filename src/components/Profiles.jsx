@@ -74,7 +74,7 @@ const Profiles = () => {
   return (
     <section className="text-white font-sans min-h-screen flex items-center justify-center">
       <div className="max-w-6xl p-4 md:p-8 overflow-hidden">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center hover:scale-150 duration-300">
           Profiles
         </h2>
 

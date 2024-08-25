@@ -16,7 +16,7 @@ const educationData = [
     title: '12th Grade',
     board: 'UP Board',
     year: '2022',
-    percentage: '65.6%',
+    percentage: '69.6%',
     description: 'Completed Intermediate school education with PCM.',
   },
   {
@@ -25,15 +25,15 @@ const educationData = [
     college: 'PSIT',
     university: 'CSJM',
     year: '2025',
-    cgpa: '8.14',
-    description: 'Bachelor of Computer Applications degree.',
+    cgpa: '8.17',
+    description: 'Bachelor of Computer Applications.',
   },
 ];
 
 const Education = () => (
   <section className=" text-white font-sans min-h-screen flex items-center justify-center">
     <div className="max-w-4xl mx-auto p-6 overflow-hidden">
-      <h2 className="text-3xl font-bold mb-8 text-center">Education</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center hover:scale-150 duration-300">Education</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full p-6">
         {educationData.map((item) => (
           <div key={item.id} className="flex items-center mb-8" data-aos="fade-left">

@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        qwitcher: ['Qwitcher Grypen', 'cursive'],
+        jersey: ['"Jersey 10"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-}
+};
