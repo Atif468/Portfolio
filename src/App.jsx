@@ -45,10 +45,6 @@ const App = () => {
 
   return (
     <div className="font-sans">
-       <motion.div
-        className="fixed top-0 left-0 right-0 h-2 z-10 bg-white origin-left"
-        style={{ scaleX: scrollYProgress }}
-      />
       <NavBar
         scrollToSection={scrollToSection}
         introRef={introRef}
@@ -58,6 +54,10 @@ const App = () => {
         achievementsRef={achievementsRef}
         educationRef={educationRef}
         profilesRef={profilesRef}
+      />
+       <motion.div
+        className="fixed top-0 left-0 right-0 h-2 z-10 bg-white origin-left"
+        style={{ scaleX: scrollYProgress }}
       />
       <section ref={introRef}>
         <Introduction />
