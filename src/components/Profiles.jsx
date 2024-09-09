@@ -6,8 +6,7 @@ const Profiles = () => {
   const [gfgData, setGfgData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
-  // Fetch LeetCode Data
+  
   useEffect(() => {
     const fetchLeetcodeData = async () => {
       try {
@@ -29,7 +28,7 @@ const Profiles = () => {
     fetchLeetcodeData();
   }, []);
 
-  // Fetch GitHub Data
+  
   useEffect(() => {
     const fetchGithubData = async () => {
       try {
@@ -49,7 +48,7 @@ const Profiles = () => {
     fetchGithubData();
   }, []);
 
-  // Fetch GFG Data
+  
   useEffect(() => {
     const fetchGfgData = async () => {
       try {
@@ -79,7 +78,7 @@ const Profiles = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* GitHub Section */}
+           
           <div
             className="shadow-sm shadow-white rounded-lg p-4 md:p-8 text-center backdrop-blur-3xl "
             data-aos="fade-down-right"
@@ -113,7 +112,7 @@ const Profiles = () => {
             ) : null}
           </div>
 
-          {/* LeetCode Section */}
+         
           <div
             className="shadow-sm shadow-white rounded-lg p-4 md:p-8  text-center backdrop-blur-3xl "
             data-aos="fade-down"
@@ -128,7 +127,7 @@ const Profiles = () => {
             ) : leetcodeData ? (
               <div>
                 <a
-                  href={leetcodeData.url}
+                  href="https://leetcode.com/u/Atif_2005/"
                   className="text-green-400 hover:text-green-300 cursor-pointer"
                 >
                   Visit LeetCode Profile
@@ -167,7 +166,7 @@ const Profiles = () => {
             ) : gfgData ? (
               <div>
                 <a
-                  href={gfgData.url}
+                  href="https://www.geeksforgeeks.org/user/atifans468/"
                   className="text-yellow-400 hover:text-yellow-300 cursor-pointer"
                 >
                   Visit GFG Profile
