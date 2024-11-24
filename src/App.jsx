@@ -44,7 +44,7 @@ const App = () => {
   // transform-origin: 0%;
 
   return (
-    <div className="font-sans">
+    <div className="font-sans bg-black">
       <NavBar
         scrollToSection={scrollToSection}
         introRef={introRef}

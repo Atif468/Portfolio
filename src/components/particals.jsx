@@ -63,7 +63,7 @@ export default function Particle() {
                 color: "#ffffff",
                 distance: 150,
                 enable: true,
-                opacity: 0.1,
+                opacity: .3,
                 width: 1,
               },
               move: {
@@ -79,12 +79,12 @@ export default function Particle() {
               number: {
                 density: {
                   enable: true,
-                  area: 800,
+                  area: 1100,
                 },
                 value: 80,
               },
               opacity: {
-                value: 0.5,
+                value: 5,
                 random: true,
               },
               shape: {
