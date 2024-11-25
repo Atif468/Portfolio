@@ -66,7 +66,7 @@ const Profiles = () => {
            <ProfileCard
             title="GitHub"
             titleColor="text-white"
-            hoverColor="hover:text-blue-300"
+            hoverColor="hover:text-blue-400"
             loading={loading}
             error={error.github}
             data={githubData}
@@ -82,7 +82,7 @@ const Profiles = () => {
            <ProfileCard
             title="LeetCode"
             titleColor="text-white"
-            hoverColor="hover:text-green-300"
+            hoverColor="hover:text-blue-400"
             loading={loading}
             error={error.leetcode}
             data={leetcodeData}
@@ -99,7 +99,7 @@ const Profiles = () => {
            <ProfileCard
             title="GeeksforGeeks"
             titleColor="text-white"
-            hoverColor="hover:text-yellow-300"
+            hoverColor="hover:text-blue-400"
             loading={loading}
             error={error.gfg}
             data={gfgData}
@@ -156,9 +156,9 @@ const ProfileCard = ({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className={`mt-4 italic ${hoverColor} transition-colors relative space-x-2 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:bg-blue-700 after:w-0 after:h-[2px] after:transition-all after:duration-500 hover:after:w-full`}
+            className={`mt-4 italic ${hoverColor} transition-colors relative space-x-2 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:bg-blue-400 after:w-0 after:h-[2px] after:transition-all after:duration-500 hover:after:w-full`}
           >
-            See {title.toLowerCase()} Profile
+            See {title.toLowerCase()} Profile→
           </a>
         </div>
       ) : null}
