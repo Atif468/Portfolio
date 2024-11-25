@@ -1,6 +1,5 @@
 import React from "react";
-import { FaTrophy, FaTasks, FaMedal, FaStar } from 'react-icons/fa';
-
+import { FaTrophy, FaTasks, FaMedal, FaStar } from "react-icons/fa";
 
 const Achievements = () => (
   <section className="relative  text-white font-sans overflow-hidden min-h-screen flex items-center justify-center">
@@ -32,10 +31,8 @@ const Achievements = () => (
         ))}
       </div>
     </div> */}
-    <div className="bg-gradient-to-r from-black to-blue-600 text-white p-8 rounded-lg shadow-lg">
-      <h2 className="text-4xl font-extrabold mb-6 text-center">
-        Achievements
-      </h2>
+    <div className="bg-gradient-to-r from-black to-blue-900  text-white p-8 rounded-lg shadow-lg">
+      <h2 className="text-4xl font-extrabold mb-6 text-center">Achievements</h2>
 
       <div className="space-y-6">
         {/* Achievement 1 */}

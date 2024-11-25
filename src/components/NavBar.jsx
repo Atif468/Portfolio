@@ -11,12 +11,15 @@ const NavBar = ({
   educationRef,
   profilesRef,
 }) => {
-  const [isOpen, setIsOpen] = useState(false); // Sidebar open state
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen); // Toggle the menu state
+    setIsOpen(!isOpen); 
   };
 
+  
+
+  
   const menuItems = [
     { label: "Home", ref: introRef, href: "#introduction", icon: <FaHome /> },
     { label: "Skills", ref: skillsRef, href: "#skills", icon: <FaTools /> },
@@ -29,51 +32,49 @@ const NavBar = ({
 
   return (
     <div className="relative">
-      {/* Navbar */}
-      <nav className="backdrop-blur-md w-full shadow-lg shadow-black p-4 flex justify-between items-center sticky top-0 z-50 bg-transparent">
-        {/* Logo */}
-        <div className="text-blue-400 text-3xl font-bold font-qwitcher hover:scale-125 duration-300">
-          Atif
-        </div>
+  {/* Navbar */}
+  <nav className="fixed top-0 w-full backdrop-blur-md shadow-lg shadow-black p-4 flex justify-between items-center z-50 bg-transparent">
+    {/* Logo */}
+    <div className="text-blue-400 text-3xl font-bold font-qwitcher hover:scale-125 duration-300">
+      Atif
+    </div>
 
-        {/* Hamburger Menu */}
-        <button
-          onClick={toggleMenu}
-          className="md:hidden text-blue-400 text-3xl focus:outline-none"
-          aria-label="Toggle navigation menu"
-        >
-          <svg
-            className="w-8 h-8"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+    <button
+      onClick={toggleMenu}
+      className="md:hidden text-blue-400 text-3xl focus:outline-none"
+      aria-label="Toggle navigation menu"
+    >
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        ></path>
+      </svg>
+    </button>
+
+    <ul className="hidden md:flex space-x-8 text-lg text-gray-300">
+      {menuItems.map((item, index) => (
+        <li key={index} className="hover:scale-110 transition duration-300">
+          <a
+            href={item.href}
+            onClick={() => scrollToSection(item.ref)}
+            className="relative flex items-center space-x-2 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
-        </button>
-
-        {/* Menu for desktop */}
-        <ul className="hidden md:flex space-x-8 text-lg text-gray-300">
-          {menuItems.map((item, index) => (
-            <li key={index} className="hover:scale-110 transition duration-300">
-              <a
-                href={item.href}
-                onClick={() => scrollToSection(item.href)}
-                className="relative flex items-center space-x-2 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
-              >
-                <span>{item.icon}</span>
-                <span>{item.label}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+            <span>{item.icon}</span>
+            <span>{item.label}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
 
       {/* Mobile Sidebar */}
       <div
