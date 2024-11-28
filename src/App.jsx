@@ -10,8 +10,8 @@ import Achievements from "./components/Achievements";
 import Education from "./components/Education";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   //take ref of all the compo...
@@ -34,7 +34,6 @@ const App = () => {
     });
   }, []);
 
-
   // position: fixed;
   // top: 0;
   // left: 0;
@@ -45,6 +44,10 @@ const App = () => {
 
   return (
     <div className="font-sans bg-black">
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 z-50 bg-white origin-left"
+        style={{ scaleX: scrollYProgress }}
+      />
       <NavBar
         scrollToSection={scrollToSection}
         introRef={introRef}
@@ -54,10 +57,6 @@ const App = () => {
         achievementsRef={achievementsRef}
         educationRef={educationRef}
         profilesRef={profilesRef}
-      />
-       <motion.div
-        className="fixed top-0 left-0 right-0 h-2 z-10 bg-white origin-left"
-        style={{ scaleX: scrollYProgress }}
       />
       <section ref={introRef}>
         <Introduction />

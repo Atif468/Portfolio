@@ -35,8 +35,10 @@ const Achievements = () => (
       <h2 className="text-4xl font-extrabold mb-6 text-center">Achievements</h2>
 
       <div className="space-y-6">
-        {/* Achievement 1 */}
-        <div className="flex items-start space-x-4 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-lg p-4 bg-black bg-opacity-70">
+        <div
+          data-aos="fade-right"
+          className="flex items-start space-x-4 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-lg p-4 bg-black bg-opacity-70"
+        >
           <div className="bg-transparent  shadow-inner shadow-white p-3 rounded-full">
             <FaTrophy className="h-8 w-8 text-white" />
           </div>
@@ -51,8 +53,10 @@ const Achievements = () => (
           </div>
         </div>
 
-        {/* Achievement 2 */}
-        <div className="flex items-start space-x-4 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-lg p-4 bg-black bg-opacity-70">
+        <div
+          data-aos="fade-left"
+          className="flex items-start space-x-4 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-lg p-4 bg-black bg-opacity-70"
+        >
           <div className="bg-transparent  shadow-inner shadow-white p-3 rounded-full">
             <FaTasks className="h-8 w-8 text-white" />
           </div>
@@ -67,8 +71,10 @@ const Achievements = () => (
           </div>
         </div>
 
-        {/* Achievement 3 */}
-        <div className="flex items-start space-x-4 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-lg p-4 bg-black bg-opacity-70">
+        <div
+          data-aos="fade-right"
+          className="flex items-start space-x-4 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-lg p-4 bg-black bg-opacity-70"
+        >
           <div className="bg-transparent  shadow-inner shadow-white p-3 rounded-full">
             <FaMedal className="h-8 w-8 text-white" />
           </div>
@@ -83,7 +89,10 @@ const Achievements = () => (
           </div>
         </div>
 
-        <div className="flex items-start space-x-4 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-lg p-4 bg-black bg-opacity-70">
+        <div
+          data-aos="fade-left"
+          className="flex items-start space-x-4 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-lg p-4 bg-black bg-opacity-70"
+        >
           <div className="bg-transparent  shadow-inner shadow-white p-3 rounded-full">
             <FaStar className="h-8 w-8 text-white" />
           </div>

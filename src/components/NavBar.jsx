@@ -33,9 +33,9 @@ const NavBar = ({
   return (
     <div className="relative">
   {/* Navbar */}
-  <nav className="fixed top-0 w-full backdrop-blur-md shadow-lg shadow-black p-4 flex justify-between items-center z-50 bg-transparent">
+  <nav className="fixed z-40 top-0 w-full backdrop-blur-md shadow-lg shadow-black p-4 pl-8 flex justify-between items-center bg-transparent">
     {/* Logo */}
-    <div className="text-blue-400 text-3xl font-bold font-qwitcher hover:scale-125 duration-300">
+    <div className="text-white hover:text-blue-400 text-3xl  font-bold font-qwitcher hover:scale-125 duration-300">
       Atif
     </div>
 

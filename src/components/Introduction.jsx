@@ -55,18 +55,15 @@ function Introduction() {
       <Particle />
 
       <div className="text-white text-center px-6 md:px-12">
-        {/* Welcome Message */}
-        <div className="font-light text-2xl md:text-3xl text-gray-400 mb-2">
+         <div className="font-light text-2xl md:text-3xl text-gray-400 mb-2">
           Hey! I'm <span className="text-blue-400 font-semibold">Atif Ansari</span>
         </div>
 
-        {/* Main Heading */}
-        <div className="text-4xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-500 to-blue-600">
+         <div className="text-4xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-500 to-blue-600">
           I'm A Full Stack Developer
         </div>
 
-        {/* Description */}
-        <div className="text-lg md:text-2xl text-gray-300 mb-6">
+         <div className="text-lg md:text-2xl text-gray-300 mb-6">
           Crafting interactive user experiences with <span className="text-blue-400">ReactJS</span>, 
           developing robust back-ends with <span className="text-blue-400">Node.js</span>, 
           and managing data with <span className="text-blue-400">MongoDB</span>.
@@ -76,8 +73,7 @@ function Introduction() {
           Passionate about delivering scalable, high-performance solutions and beautiful user interfaces.
         </div>
 
-        {/* Resume Button */}
-        <a
+         <a
           className="inline-block py-3 px-8 bg-blue-500 text-white text-lg font-semibold rounded-full hover:bg-blue-400 hover:scale-105 transform transition-all duration-300"
           href="https://drive.google.com/file/d/1YDyZkXLLIK9sixyy6Xrat3X8ft1_aU_X/view?usp=sharing"
           target="_blank"
@@ -86,8 +82,7 @@ function Introduction() {
           View My Resume
         </a>
 
-        {/* Social Links */}
-        <div className="mt-8 flex justify-center space-x-8 text-2xl">
+         <div className="mt-8 flex justify-center space-x-8 text-2xl">
           <a
             href="https://github.com/atif468"
             target="_blank"
