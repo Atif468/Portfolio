@@ -71,7 +71,7 @@ const Achievements = () => (
           </div>
         </div>
 
-        <div
+{/*         <div
           data-aos="fade-right"
           className="flex items-start space-x-4 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out rounded-lg p-4 bg-black bg-opacity-70"
         >
@@ -87,7 +87,7 @@ const Achievements = () => (
               Contest (ICPC), a testament to my competitive programming skills.
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div
           data-aos="fade-left"
